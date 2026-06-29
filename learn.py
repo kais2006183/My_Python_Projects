@@ -1,14 +1,12 @@
 #======================================================================================================================
-
-# # في البداية نقوم بإنشاء القائمة الفارغة للمواقع
 # myfavoritwebs = []
 
 # # =======================================================
-# # الخطوة 1: بوابة الأمان (الباسورد أول شيء عند تشغيل الملف)
+# #  (اPassword)
 # # =======================================================
 # Password = "kais@123"
 # Attempts = 4
-# access_granted = False  # هذا الحارس الذي يحدد هل يفتح البرنامج أم لا
+# access_granted = False  ا
 
 # print("=== Welcome to Bookmark Manager ===")
 
@@ -18,7 +16,7 @@
 #     if inputpassword == Password:
 #         print("Correct Password. Program Unlocked!\n")
 #         access_granted = True
-#         break  # نكسر اللوب هنا لأن الباسورد صحيح لننتقل لما بعده
+#         break 
 #     else:
 #         Attempts -= 1
 #         if Attempts > 0:
@@ -27,12 +25,11 @@
 #             print("You've Finished All Tries. Access Denied!")
 
 # # =======================================================
-# # الخطوة 2: تشغيل البرنامج (فقط إذا كان الباسورد صحيحاً)
+# # if password write open bookmark
 # # =======================================================
 # if access_granted:
     
-#     # [كود الصورة image_bbef49.png] - مرحلة إضافة المواقع
-#     maxwebs = 3
+#    #     maxwebs = 3
     
 #     while maxwebs > 0:
 #         web = input("Write Website Name Without https:// ")
@@ -47,7 +44,7 @@
         
 #     print("=" * 50)
     
-#     # [كود الصورة image_bbef82.png] - مرحلة استعراض المواقع
+#   
 #     qustion = input("Do you need to look in your websites list? ").lower().capitalize()
     
 #     if qustion == "Yes" or qustion == "Y":
@@ -65,8 +62,6 @@
             
 #     elif qustion == "No" or qustion == "N":
 #         print("Ok Thank you .")
-
-# # في حال كان access_granted يساوي False (الباسورد غلط) لن يقرأ البرنامج أي سطر من الأسطر التي بالداخل ويموت الكود هنا.
 
 
 
@@ -92,12 +87,11 @@
 # Clean_Names = []
 
 # for name in raw_names:
-#     # نقوم بالتنظيف مرة واحدة فقط ونخزنها في متغير مؤقت
 #     fixed_name = name.strip().capitalize()
     
 #     if fixed_name not in Clean_Names:
 #         Clean_Names.append(fixed_name)
-#         # الآن ستطبع فقط عندما يتم إضافة اسم جديد فعلياً
+#         
 #         print(f"Added to list: '{fixed_name}'")
 
 # print(f"\nFinal Clean List: {Clean_Names}")
@@ -126,10 +120,10 @@
 #     if grade < 50:
 #         boosted_grade = grade + 5
 #         print(f"{boosted_grade} (Boosted)")
-#         total_grades += boosted_grade  # نجمع الدرجة بعد الزيادة
+#         total_grades += boosted_grade  
 #     elif grade >= 50:
 #         print(f"{grade} (Passed)")
-#         total_grades += grade         # نجمع الدرجة الناجحة أيضاً!
+#         total_grades += grade        
 
 # # نطبع المتغير total_grades وليس القائمة grades
 # print(f"\nAll Total grade: {total_grades}")
@@ -163,7 +157,7 @@
 
 # python_count = 0
 
-# # بدلاً من متغير واحد، نستخدم متغيرين (الاسم واللغة)
+
 # for name, lang in developers.items():
 #     print(f"Developer => {name} - Language => {lang}")
     
@@ -246,7 +240,6 @@
 
 # while z > 0 :
 #     z -= 1
-#     # اذا اردت ان ترتب الارقام عكسيا من ال 5 الى 1 مثلا يمكنك ان تضع z = 5 في البداية وتضع شرط z > 0 وتضع z -= 1 في النهاية
 #     if z % 2 == 0 :
 #         print(f"Even Number: {z}")
 #     else :
